@@ -1,0 +1,35 @@
+9 pts
+
+1. 
+
+Evidence looks ok.
+
+Good organization of screenshots.
+
+
+2.
+
+The definition of a Superkey needs work. It currently says: "A superkey is a
+set of attributes in which the values of the attributes identify only one
+entity in the set of entities." I believe, instead of "entities" here you
+should talk about "rows" or "tuples" that are uniquely identified by a
+superkey.
+
+
+3.
+
+You might have the wrong concept of what -nullable- means. Or also you may not
+understand how to work with dates in SQL. It is a poor example.
+
+
+4.
+
+The ``frist normal form'' has nothing to do with primary keys. Please check
+your notes and the textbook Chapter 6.1.
+
+You have a typo. It should be the ``access rows by content only'' rule; and it
+needs more work. Please check your notes or the book Chapter 6.1.
+
+
+
+- Dr. Rivas
