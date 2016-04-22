@@ -1,0 +1,84 @@
+4 pts
+
+Correct output for some queries
+Some correct queries
+Some correct SQL statements
+SQL statements are somewhat readable
+
+Recommendations: 
+ To improve your readability, write queries like this:
+  SELECT DISTINCT pid
+  FROM orders
+  WHERE aid IN (SELECT aid
+                FROM orders
+                WHERE cid IN (SELECT cid
+                              FROM customers
+                              WHERE city = 'Dallas'))
+  ORDER BY pid DESC;     -- < notice the correct indentation
+
+
+
+2. Get the ids of products ordered through any agent who takes at least one
+order from a customer in Dallas, sorted by pid from highest to lowest. (This is
+not the same as asking for ids of products ordered by customers in Dallas.)
+
+Incorrect output
+- The ORDER BY is incorrect
+
+
+3. Get the ids and names of customers who did not place an order through agent
+a01.
+
+Incorrect output
+- You needed to use subqueries not joins.
+
+
+4. Get the ids of customers who ordered both product p01 and p07.
+
+Incorrect output
+- You needed to use subqueries not joins.
+
+
+5. Get the ids of products not ordered by any customers who placed any order
+through agent a07 in pid order from highest to lowest.
+
+Incorrect output
+- You needed to use subqueries not joins.
+
+
+6. Get the name, discounts, and city for all customers who place orders through
+agents in London or New York.
+
+Incorrect output
+- You needed to use subqueries not joins.
+
+
+7. Get all customers who have the same discount as that of any customers in
+Dallas or London
+
+Incorrect output
+- It seems like you did not read the correct instructions for this query. Read
+  it again, please.
+
+
+8. Tell me about check constraints: What are they? What are they good for? What
+is the advantage of putting that sort of thing inside the database? Make up
+some examples of good uses of check constraints and some examples of bad uses
+of check constraints. Explain the differences in your examples and argue your
+case.
+
+- What you wrote has nothing to do with check constraints. 
+
+
+In general: 
+
+- Please do not use tabs for indentation. Use spaces instead.
+
+- Test all your SQL statements.
+
+- Make sure you read all the instructions for queries really well.
+
+- Make sure your name is somewhere in the .sql file.
+
+
+- Dr. Rivas
