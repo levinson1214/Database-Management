@@ -1,0 +1,53 @@
+7 pts
+
+Correct output for some queries
+Mostly correct queries
+Mostly correct SQL statements
+SQL statements are somewhat readable
+
+Recommendations: 
+ To improve your readability, write queries like this:
+  SELECT DISTINCT pid
+  FROM orders
+  WHERE aid IN (SELECT aid
+                FROM orders
+                WHERE cid IN (SELECT cid
+                              FROM customers
+                              WHERE city = 'Dallas'))
+  ORDER BY pid DESC;     -- < notice the correct indentation here
+
+
+1. Show the cities of agents booking an order for a customer whose id is 
+   'c002'. Use joins; no subqueries.
+
+Incorrect output
+- You are joining by the wrong fields.
+
+
+2. Show the ids of products ordered through any agent who makes at least 
+   one order for a customer in Dallas, sorted by pid from highest to 
+   lowest. Use joins; no subqueries.
+
+Incorrect output
+- You are joining by the wrong fields.
+
+
+4. Show the names of customers who have never placed an order. Use an 
+   outer join.
+
+Incorrect output
+- do you remember what  = null does?
+
+
+In general: 
+
+- Please do not use tabs for indentation. Use spaces instead.
+
+- Test all your SQL statements.
+
+- Make sure you read all the instructions for queries really well.
+
+- Make sure your name is somewhere in the .sql file.
+
+
+- Dr. Rivas
